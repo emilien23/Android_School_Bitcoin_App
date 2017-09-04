@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">AndroidSchool_Bitcoin_App</string>
+    <string name="network_error">Ошибка в работе сети</string>
+
+    <string name="choice_limit">Limit</string>
+    <string name="choice_limit_description">Choice limit</string>
+    <string name="choice_convert">Currency</string>
+    <string name="choice_convert_description">Choice currency convert</string>
+    <string name="global_inform">Глобальная информация</string>
+    <string name="filter">Фильтр</string>
+    <string name="bitcoin_btc">Bitcoin(BTC)</string>
+    <string name="current_course">Current course</string>
+    <string name="btc_price_def">1 BTC = 3 415 $</string>
+    <string name="last_updated">Last updated</string>
+    <string name="date_def">01-01-1970</string>
+    <string name="one_h">1 h:</string>
+    <string name="percent_def">0.0%</string>
+    <string name="one_day">1 d:</string>
+    <string name="seven_day">7 d:</string>
+    <string name="module_developing">Модуль находится в разработке</string>
+    <string name="criptocourse">СriptoCourse</string>
+    <string name="loading">Loading</string>
+    <string name="btc">BTC</string>
+    <string name="bitcoin">Bitcoin</string>
+    <string name="total_market_capacity">Total Market Capacity</string>
+    <string name="bitcoin_percent">Bitcoin percent</string>
+    <string name="active_currencies">Active currencies</string>
+    <string name="active_markets">Active markets</string>
+    <string name="percent">%</string>
+    <string name="timeline_error">"Fetch timeline error: "</string>
+    <string name="download_data">Загрузка данных</string>
+    <string name="image_url">ImageUrl</string>
+    <string name="euro">" €"</string>
+    <string name="rub">" ₽"</string>
+    <string name="dollar">" $"</string>
+</resources>

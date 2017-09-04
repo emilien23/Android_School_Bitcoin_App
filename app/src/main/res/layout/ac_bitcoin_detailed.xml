@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.BitcoinDetailedActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_arrow_back_24dp"
+                    android:id="@+id/exit_image_button"
+                    android:background="@android:color/transparent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/bitcoin_btc"
+                    android:id="@+id/bitcoin_title_detailed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="12sp"
+                    tools:text="Bitcoin (BTC)" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:weightSum="2"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#de000000"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/current_course"
+                    android:id="@+id/current_course_text"
+
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="12sp"
+                    android:text="@string/btc_price_def"
+                    android:id="@+id/current_course_value"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#de000000"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/last_updated"
+                    android:id="@+id/last_modified_text"
+
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:lineSpacingExtra="12sp"
+                    android:text="@string/date_def"
+                    android:id="@+id/last_modified_value"
+                    android:layout_marginStart="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:text="@string/one_h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/one_h_text"
+                        android:layout_weight="1"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_arrow_drop_up_24dp"
+                        android:id="@+id/one_h_image"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:text="@string/percent_def"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/one_h_value"
+                        android:layout_weight="1"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp">
+
+                    <TextView
+                        android:text="@string/one_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/one_d_text"
+                        android:layout_weight="1"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_arrow_drop_up_24dp"
+                        android:id="@+id/one_d_image"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:text="@string/percent_def"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/one_d_value"
+                        android:layout_weight="1"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp">
+
+                    <TextView
+                        android:text="@string/seven_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/seven_d_text"
+                        android:layout_weight="1"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_arrow_drop_up_24dp"
+                        android:id="@+id/seven_d_image" />
+
+                    <TextView
+                        android:text="@string/percent_def"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/seven_d_value"
+                        android:layout_weight="1"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:text="@string/module_developing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/in_developing_text"
+                android:visibility="invisible"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:fontFamily="casual"
+                android:textStyle="normal|bold"
+                android:layout_gravity="center" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/bitcoin_chart"
+                android:layout_width="match_parent"
+                android:layout_height="251dp"
+                android:visibility="visible" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

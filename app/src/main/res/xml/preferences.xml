@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:entries="@array/limit_count"
+        android:entryValues="@array/limit_count"
+        android:key="pref_nameOfLimit"
+        android:title="@string/choice_limit"
+        android:summary="@string/choice_limit_description"
+        android:persistent="true"
+        android:defaultValue="No limit"/>
+    <ListPreference
+        android:entries="@array/convert_value"
+        android:entryValues="@array/convert_value"
+        android:key="pref_typeOfConvert"
+        android:title="@string/choice_convert"
+        android:summary="@string/choice_convert_description"
+        android:persistent="true"
+        android:defaultValue="USD"/>
+</PreferenceScreen>
